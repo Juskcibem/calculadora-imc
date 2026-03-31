@@ -1,5 +1,6 @@
 # Calculadora de IMC
 ![preview](preview.png)
+
 Esse projeto eu fiz baseado em um trabalho que tive quando estava cursando ADS, só que dessa vez resolvi refazer do zero pra ver se eu realmente tinha aprendido alguma coisa.
 
 Spoiler: apanhei bastante no começo 👍
