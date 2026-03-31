@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- NÃO ESQUECER ISSO AQUI PELO AMOR DE DEUS
+       já perdi mó tempo pq o site ficava zoado no celular -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora de IMC</title>
+
+    <!-- outra coisa que se esquecer quebra TUDO e vc fica 20 min achando que é bug no css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- container geral (serve só pra centralizar, não inventa moda aqui) -->
+    <main class="container">
+
+        <!-- card principal (a caixinha bonita) -->
+        <section class="card">
+
+            <h1>Calculadora de IMC</h1>
+
+            <!-- mudei essa frase pq a outra tava com cara de site de hospital kkk -->
+            <p class="subtitle">Bora ver como tá esse corpo aí 👀</p>
+
+            <!-- altura -->
+            <div class="input-box">
+                <label for="altura">Altura (m)</label>
+
+                <!-- step 0.01 senão não aceita tipo 1.75 e vc acha que o site quebrou -->
+                <input type="number" id="altura" placeholder="Ex: 1.75" step="0.01">
+            </div>
+
+            <!-- peso -->
+            <div class="input-box">
+                <label for="peso">Peso (kg)</label>
+
+                <!-- mesma coisa aqui, não mexer nisso sem saber oq tá fazendo -->
+                <input type="number" id="peso" placeholder="Ex: 70" step="0.1">
+            </div>
+
+            <!-- botões -->
+            <div class="buttons">
+
+                <!-- botão que faz a mágica acontecer -->
+                <button id="calcular">Calcular</button>
+
+                <!-- botão pra resetar tudo pq vc errou os valores (vai acontecer várias vezes) -->
+                <button id="limpar" class="btn-secondary">Limpar</button>
+            </div>
+
+            <!-- resultado aparece aqui -->
+            <!-- começa escondido pq mostrar vazio fica feio -->
+            <div id="resultado" class="resultado hidden"></div>
+
+            <!-- tabela de referência -->
+            <div class="tabela-imc">
+
+                <h2>Classificação do IMC</h2>
+
+                <!-- isso aqui é só pra consulta, o js que manda no resultado de verdade -->
+                <ul>
+                    <li>Menor que 18.5 — Abaixo do peso</li>
+                    <li>18.5 a 24.9 — Peso normal</li>
+                    <li>25 a 29.9 — Sobrepeso</li>
+                    <li>30 a 34.9 — Obesidade grau I</li>
+                    <li>35 a 39.9 — Obesidade grau II</li>
+                    <li>40 ou mais — Obesidade grau III</li>
+                </ul>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- COLOCAR O SCRIPT NO FINAL
+       já deixei isso no head uma vez e fiquei me perguntando pq nada funcionava 👍 -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

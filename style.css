@@ -1,0 +1,206 @@
+/* reset básico
+   isso aqui eu sempre coloco pq sem isso cada navegador inventa uma coisa diferente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* fonte padrão pq eu não queria inventar muito e dar ruim */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+
+    /* refiz esse fundo umas mil vezes até parar de ficar com cara de tela de login genérica */
+    background: linear-gradient(135deg, #020617, #0f172a, #1e293b, #0f172a);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* sem esse padding no celular fica tudo grudado e feio */
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+
+    /* não deixa a calculadora ficar gigante em tela grande */
+    max-width: 450px;
+}
+
+.card {
+    /* deixei mais dark e menos “vidro clarão” pq eu curti mais assim */
+    background: rgba(15, 23, 42, 0.78);
+
+    /* vi em tutorial e realmente dá um efeito daora */
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 30px;
+    color: #f8fafc;
+
+    /* sombra pra destacar o card do fundo
+     confesso que fui mexendo no olho até parecer aceitável */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 2rem;
+
+    /* branco meio suave pra não ficar estourado */
+    color: #f8fafc;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 24px;
+
+    /* azulzinho claro só pra dar um charme e não ficar tudo branco */
+    color: #93c5fd;
+}
+
+.input-box {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+
+    /* deixei meio azulado pq combina mais com o fundo */
+    color: #dbeafe;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+
+    /* tirei a borda padrão pq era feia demais */
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+
+    font-size: 16px;
+    outline: none;
+
+    /* input dark pq eu quis tudo mais combinando */
+    background: rgba(30, 41, 59, 0.95);
+    color: #f8fafc;
+}
+
+/* cor do placeholder
+   detalhe besta mas sem isso tava muito sem graça */
+input::placeholder {
+    color: #94a3b8;
+}
+
+input:focus {
+    /* esse efeito aqui eu copiei a ideia de vídeo mesmo */
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+button {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    /* transição pra parecer mais arrumadinho */
+    transition: transform 0.2s ease, opacity 0.2s ease, filter 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+
+    /* leve transparência pq achei que ficou mais daora */
+    opacity: 0.95;
+    filter: brightness(1.05);
+}
+
+#calcular {
+    /* deixei o verde pra destacar bem */
+    background: linear-gradient(135deg, #16a34a, #22c55e);
+    color: white;
+}
+
+.btn-secondary {
+    /* botão limpar mais escuro pra combinar com o tema */
+    background: #334155;
+    color: #e2e8f0;
+}
+
+.resultado {
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 16px;
+
+    /* mesma ideia do card, mas um pouco diferente pra separar visualmente */
+    background: rgba(30, 41, 59, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    text-align: center;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #f8fafc;
+}
+
+.hidden {
+    display: none;
+}
+
+.tabela-imc {
+    margin-top: 24px;
+}
+
+.tabela-imc h2 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #bfdbfe;
+}
+
+.tabela-imc ul {
+    padding-left: 18px;
+}
+
+.tabela-imc li {
+    margin-bottom: 8px;
+
+    /* deixei mais suave pra não competir com o resto */
+    color: #cbd5e1;
+}
+
+/* ajustezinho pra telas menores
+   aprendi apanhando que se não fizer isso no celular fica meio torto */
+@media (max-width: 500px) {
+    .card {
+        padding: 22px;
+        border-radius: 20px;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
