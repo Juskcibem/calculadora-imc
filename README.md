@@ -4,6 +4,9 @@ Esse projeto eu fiz baseado em um trabalho que tive quando estava cursando ADS, 
 
 Spoiler: apanhei bastante no começo 👍
 
+## 🌐 Acesse o projeto
+
+(https://juskcibem.github.io/calculadora-imc/)
 ---
 
 ## 💀 O que rolou
