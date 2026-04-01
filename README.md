@@ -5,12 +5,12 @@ Esse projeto eu fiz baseado em um trabalho que tive quando estava cursando ADS, 
 
 Spoiler: apanhei bastante no começo 👍
 
-## 🌐 Acesse o projeto
+## Acesse o projeto
 
 (https://juskcibem.github.io/calculadora-imc/)
 ---
 
-## 💀 O que rolou
+## O que rolou
 
 No início achei que ia ser simples… "ah é só um cálculo né"
 
@@ -22,7 +22,7 @@ No início achei que ia ser simples… "ah é só um cálculo né"
 
 ---
 
-## 🎓 Um pouco da minha trajetória
+## Um pouco da minha trajetória
 
 Eu comecei fazendo ADS, mas acabei trancando quando estava indo pro terceiro semestre.
 
@@ -34,7 +34,7 @@ Quando voltei, decidi mudar pra Engenharia da Computação justamente por isso, 
 
 ---
 
-## 🎥 O que me salvou
+## O que me salvou
 
 Teve muito tutorial envolvido (sem vergonha nenhuma de falar kkk)
 
@@ -42,7 +42,7 @@ Principalmente do Gustavo Guanabara (Curso em Vídeo), que ajudou bastante a ent
 
 ---
 
-## 😅 O resultado
+## O resultado
 
 Não tá perfeito, mas tá funcionando e visualmente ficou aceitável (o que pra mim já é vitória)
 
@@ -55,7 +55,7 @@ A calculadora:
 
 ---
 
-## 🤡 Momento de crise existencial
+## Momento de crise existencial
 
 Testando com meus próprios dados:
 
@@ -69,7 +69,7 @@ Essa calculadora virou mais um tapa na cara do que qualquer outra coisa
 
 ---
 
-## 🛠 Tecnologias usadas
+## Tecnologias usadas
 
 - HTML (tranquilo)
 - CSS (aqui eu sofri)
@@ -77,7 +77,7 @@ Essa calculadora virou mais um tapa na cara do que qualquer outra coisa
 
 ---
 
-## 🚀 Próximas ideias (talvez eu faça)
+## Próximas ideias (talvez eu faça)
 
 - melhorar mais o visual
 - adicionar animação
@@ -86,7 +86,7 @@ Essa calculadora virou mais um tapa na cara do que qualquer outra coisa
 
 ---
 
-## 👨‍💻 Autor
+## Autor
 
 Hugo
 
